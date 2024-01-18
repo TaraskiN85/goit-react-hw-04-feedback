@@ -8,7 +8,7 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
             onClick={() => onLeaveFeedback(option)}
             key={options.indexOf(option)}
           >
-            {option.charAt(0).toUpperCase() + option.slice(1)}
+            {option}
           </button>)}
       </div>
     )

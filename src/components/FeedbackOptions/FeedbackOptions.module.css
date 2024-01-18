@@ -12,6 +12,7 @@
   background-color: #cccccc;
   box-shadow: 0 5px 8px #cccccc;
   cursor: pointer;
+  text-transform: capitalize;
 }
 
 .options button:hover,
