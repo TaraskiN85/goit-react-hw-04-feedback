@@ -1,0 +1,10 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 100px;
+  font-size: 36px;
+  color: #222222;
+}
