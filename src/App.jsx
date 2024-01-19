@@ -13,9 +13,9 @@ export const App = ()=> {
   const [bad, setBad] = useState(0)
 
   const onLeaveFeedback = (option) => {
-    if (option === 'good') setGood(good + 1)
-    if (option === 'neutral') setNeutral(neutral + 1)
-    if (option === 'bad') setBad(bad + 1)
+    if (option === 'good') setGood(prev => prev + 1)
+    if (option === 'neutral') setNeutral(prev => prev + 1)
+    if (option === 'bad') setBad(prev => prev + 1)
   }
 
   const countTotalFeedback = () => good + neutral + bad
@@ -27,7 +27,7 @@ export const App = ()=> {
         <Section title='Please Leave Feedback'>
           
         <FeedbackOptions
-          options={Object.getOwnPropertyNames({good, neutral, bad})}
+          options={Object.keys({good, neutral, bad})}
           onLeaveFeedback={onLeaveFeedback}
         />
         </Section>
